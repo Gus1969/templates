@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 767px) {
+  body {
+    position: relative;
+    background-image: url("../Assets/Background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    overflow: hidden;
+  }
+  .card {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family: "Inter", sans-serif;
+    width: 450px;
+    height: 800px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 30px 10px;
+  }
+  .card {
+    position: static;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  .card .card-title {
+    height: 23%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Assets/Pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blue;
+  }
+
+  .card-title h2 {
+    color: white;
+    text-align: center;
+    width: 66% !important;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .card-body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .card-body p {
+    width: 90%;
+    text-align: center;
+    color: gray;
+    letter-spacing: 0.5px;
+
+    font-size: 14px;
+  }
+  form {
+    margin: 20px 0;
+    width: 100%;
+  }
+  form > input {
+    background: rgba(245, 245, 245, 0.884);
+    border: 1px solid lightgray;
+    margin-right: 2px;
+    border-radius: 5px;
+    width: 60% !important;
+    padding: 15px;
+    text-indent: 10px;
+  }
+  ::placeholder {
+    color: lightgray;
+  }
+  form > span > button {
+    border-radius: 5px;
+    padding: 8px 13px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #span {
+    color: gray;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .avatar {
+    margin: 20px 0;
+    display: flex;
+    width: 50%;
+  }
+  .avatar-details {
+    display: block;
+    margin-left: 10px;
+    width: 250px;
+  }
+  .avatar-details h6 {
+    font-size: 12px;
+  }
+  .avatar-details p {
+    font-size: 12px;
+  }
+  .end {
+    margin-top: 20px;
+    text-align: justify;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  .card {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-family: "Inter", sans-serif;
+    border-radius: 20px;
+    width: 450px;
+    height: 800px;
+  }
+}
+
+.card .card-title {
+  height: 23%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/Pattern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: blue;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card-title h2 {
+  color: white;
+  text-align: center;
+  width: 60%;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.card-body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card-body p {
+  width: 90%;
+  text-align: center;
+  color: gray;
+  letter-spacing: 0.5px;
+
+  font-size: 14px;
+}
+form {
+  margin: 20px 0;
+  width: 100%;
+}
+form > input {
+  background: rgba(245, 245, 245, 0.884);
+  border: 1px solid lightgray;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 70%;
+  padding: 15px;
+  text-indent: 10px;
+}
+::placeholder {
+  color: lightgray;
+}
+form > span > button {
+  border-radius: 5px;
+  padding: 16px 18px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+#span {
+  color: gray;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.avatar {
+  margin: 20px 0;
+  display: flex;
+  width: 50%;
+}
+.avatar-details {
+  display: block;
+  margin-left: 10px;
+  width: 250px;
+}
+.avatar-details h6 {
+  font-size: 12px;
+}
+.avatar-details p {
+  font-size: 12px;
+}
+.end {
+  margin-top: 20px;
+  text-align: justify;
+  width: 100% !important;
+}
